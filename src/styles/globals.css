@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+	--color-type-normal: #a8a878;
+	--color-type-fire: #f08030;
+	--color-type-water: #6890f0;
+	--color-type-grass: #78c850;
+	--color-type-electric: #f8d030;
+	--color-type-ice: #98d8d8;
+	--color-type-fighting: #c03028;
+	--color-type-poison: #a040a0;
+	--color-type-ground: #e0c068;
+	--color-type-flying: #a890f0;
+	--color-type-psychic: #f85888;
+	--color-type-bug: #a8b820;
+	--color-type-rock: #b8a038;
+	--color-type-ghost: #705898;
+	--color-type-dragon: #7038f8;
+	--color-type-dark: #705848;
+	--color-type-steel: #b8b8d0;
+	--color-type-fairy: #ee99ac;
+}
+
+.bg-type-normal {
+	background-color: var(--color-type-normal);
+}
+.bg-type-fire {
+	background-color: var(--color-type-fire);
+}
+.bg-type-water {
+	background-color: var(--color-type-water);
+}
+.bg-type-grass {
+	background-color: var(--color-type-grass);
+}
+.bg-type-electric {
+	background-color: var(--color-type-electric);
+}
+.bg-type-ice {
+	background-color: var(--color-type-ice);
+}
+.bg-type-fighting {
+	background-color: var(--color-type-fighting);
+}
+.bg-type-poison {
+	background-color: var(--color-type-poison);
+}
+.bg-type-ground {
+	background-color: var(--color-type-ground);
+}
+.bg-type-flying {
+	background-color: var(--color-type-flying);
+}
+.bg-type-psychic {
+	background-color: var(--color-type-psychic);
+}
+.bg-type-bug {
+	background-color: var(--color-type-bug);
+}
+.bg-type-rock {
+	background-color: var(--color-type-rock);
+}
+.bg-type-ghost {
+	background-color: var(--color-type-ghost);
+}
+.bg-type-dragon {
+	background-color: var(--color-type-dragon);
+}
+.bg-type-dark {
+	background-color: var(--color-type-dark);
+}
+.bg-type-steel {
+	background-color: var(--color-type-steel);
+}
+.bg-type-fairy {
+	background-color: var(--color-type-fairy);
+}
+
+.text-type-fire {
+	color: var(--color-type-fire);
+}
+.text-type-water {
+	color: var(--color-type-water);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif;
+}
